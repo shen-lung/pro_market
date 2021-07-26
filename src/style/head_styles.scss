@@ -44,8 +44,8 @@
 
 .head__find-input {
     border-radius: 4px 0 0 4px;
-    font-size: 18px;
-    font-family: sans-serif;
+    font-size: $font-input-size;
+    font-family: $font-family;
     position: absolute;
     border: none;
     margin-left: 30px;
@@ -57,6 +57,6 @@
 .head__find-input:focus-visible {
     outline: none;
     color: $gray-666;
-    font-size: 18px;
-    font-family: sans-serif;
+    font-size: $font-input-size;
+    font-family: $font-family;
 }
