@@ -1,0 +1,81 @@
+@import './base_styles.scss';
+
+.content {
+    margin: auto;
+    width: $content-section-width;
+}
+
+.content__product-path {
+    margin-top: $space-16;
+}
+
+.product-path-size {
+    font-size: $product-path-size;
+}
+
+.product-content {
+    margin-top: $space-16;
+}
+
+.product-content-data {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $section-background-color;
+    padding: $space-16;
+}
+
+.product-image {
+    background-color: rgb(148, 148, 148);
+    width: $product-image-size;
+    height: auto;
+    border-radius: $border-radius;
+}
+
+.product-description {
+    width: $product-description-width;
+}
+
+.product-sold-font-size {
+    font-size: $product-sold-font-size;
+}
+
+.product-name-font-size {
+    font-size: $product-name-font-size;
+}
+
+.product-card-price-font-size {
+    font-size: $product-card-price-font-size;
+    margin-bottom: 26px;
+    margin-top: -9px;
+}
+
+.product-first-name {
+    margin-top: -7px;
+}
+.product-second-name {
+    margin-top: -18px;
+}
+
+.product-buy-button {
+    background-color: $buy-button-background-color;
+    color: #ffffff;
+    border: 3px solid $buy-button-border-color;
+    border-radius: $border-radius;
+    font-size: $buy-button-font-size;
+    height: 40px;
+    width: $button-width;
+}
+
+.product-description-title {
+    font-size: $product-description-title-font-size;
+}
+
+.product-description-text {
+    font-size: $product-description-text-font-size;
+}
+
+.product-description-section {
+    margin-left: $space-16;
+    margin-top: $space-16;
+    width: $product-description-section-width;
+}

@@ -16,7 +16,7 @@ export default function ContentComponent() {
                     <div className="content__search-result-image">
                         <img src="/src/images/ipod.jpg" className="search-result-image" />
                     </div>
-                    <div className="product-description">
+                    <div className="product-search-description">
                         <div className="product-head">
                             <div className="product-price">
                                 <span className="product-price-font-size">$1.980</span>

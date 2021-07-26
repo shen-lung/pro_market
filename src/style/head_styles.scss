@@ -8,9 +8,9 @@
 .head-content {
     position: relative;
     top: 50%;
-    left: 25%;
+    left: 24%;
     transform: translateY(-50%);
-    width: 888px;
+    width: 1000px;
 }
 
 .head--logo_image {
@@ -33,7 +33,7 @@
 }
 
 .head--search_icon_section {
-    border-radius: 0 4px 4px 0;
+    border-radius: 0 $border-radius $border-radius 0;
     height: 38px;
     background-color: $body-background-color;
     position: absolute;
@@ -43,7 +43,7 @@
 }
 
 .head__find-input {
-    border-radius: 4px 0 0 4px;
+    border-radius: $border-radius 0 0 $border-radius;
     font-size: $font-input-size;
     font-family: $font-family;
     position: absolute;
@@ -51,7 +51,7 @@
     margin-left: 30px;
     height: 36px;
     padding-left: 16px;
-    width: 750px;
+    width: 862px;
 }
 
 .head__find-input:focus-visible {
