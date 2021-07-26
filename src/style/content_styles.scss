@@ -23,15 +23,11 @@
     padding: $space-16;
 }
 
-.content__search-data {
-    padding: $space-16;
-}
-
 .search-result-image {
     background-color: rgb(148, 148, 148);
-    width: 180px;
-    height: 180px;
-    border-radius: 4px;
+    width: product-search-image-size;
+    height: product-search-image-size;
+    border-radius: $border-radius;
 }
 
 .product-head {
@@ -56,14 +52,14 @@
     font-size: $product-place-font-size;
 }
 
-.product-description {
+.product-search-description {
     margin-top: 14px;
     margin-left: $space-16;
-    width: $product-card-width;
+    width: $product-search-card-width;
 }
 
 .product-price {
-    width: 700px;
+    width: 600px;
 }
 
 .product-description__title {

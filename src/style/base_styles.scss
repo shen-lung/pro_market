@@ -9,7 +9,8 @@ $gray-999: #999999;
 $section-background-color: $white;
 $body-background-color: #eeeeee;
 $head-background-color: #ffe600;
-$button-background-color: #3483fa;
+$buy-button-background-color: #3483fa;
+$buy-button-border-color: #3483fa;
 $texto-color: $gray-333;
 
 // Margin space
@@ -24,6 +25,25 @@ $product-price-font-size: 24px;
 $product-description-font-size: 18px;
 $product-place-font-size: 12px;
 
+// Product font style
+$product-sold-font-size: 14px;
+$buy-button-font-size: 14px;
+$product-description-text-font-size: 16px;
+$product-name-font-size: 24px;
+$product-description-title-font-size: 28px;
+$product-card-price-font-size: 46px;
+
 // Product Card
+$product-description-width: 270px;
 $product-card-width: 900px;
+$product-search-card-width: 400px;
+$product-search-image-size: 180px;
+$product-image-size: 680px;
+$product-description-section-width: 660px;
+
+$content-section-width: 1000px;
+$border-radius: 4px;
+$button-width: 256px;
+
+
 
