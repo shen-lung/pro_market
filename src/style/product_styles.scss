@@ -26,9 +26,12 @@
 
 .product-image {
     background-color: rgb(148, 148, 148);
-    width: $product-image-size;
+    max-width: 100%;
     height: auto;
     border-radius: $border-radius;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .product-description {
@@ -65,6 +68,9 @@
     height: 40px;
     width: $button-width;
 }
+.product-buy-button:hover {
+    cursor: pointer
+}
 
 .product-description-title {
     font-size: $product-description-title-font-size;
@@ -78,4 +84,8 @@
     margin-left: $space-16;
     margin-top: $space-16;
     width: $product-description-section-width;
+}
+
+.product-content-result-image {
+    width: 696px;
 }

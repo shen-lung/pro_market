@@ -10,7 +10,7 @@
     top: 50%;
     left: 24%;
     transform: translateY(-50%);
-    width: 1000px;
+    width: 994px;
 }
 
 .head--logo_image {
@@ -18,6 +18,10 @@
     height: 36px;
     outline: none;
     width: 53px;
+}
+
+.head--logo_image:hover {
+    cursor: pointer;
 }
 
 .head--search_image {
