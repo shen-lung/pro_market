@@ -65,7 +65,7 @@ const getCategoriesData = (categoriesData) => {
 
 app.get('/api/search', (req, res) => {
     const { q, limit } = req.query;
-    
+
     (async () => {
         const response = await got(`https://api.mercadolibre.com/sites/MLA/search?q=${q}`);
         const data = JSON.parse(response.body);
@@ -73,7 +73,6 @@ app.get('/api/search', (req, res) => {
         const categoriesResponse = await got(`https://api.mercadolibre.com/categories/${rangeData[0].category_id}`);
         const categoriesData = JSON.parse(categoriesResponse.body);
         const filteredSearchData = getSearchFilteredData(rangeData, categoriesData);
-        console.log(filteredSearchData)
         
         res.send(JSON.stringify({data: filteredSearchData}));
     })();

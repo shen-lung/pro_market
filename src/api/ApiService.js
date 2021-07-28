@@ -8,10 +8,7 @@ import {
     PRODUCT_PARAM,
 } from '../constants.js'
 
-export const searchProducts = (query) => {
-    const searchData = SEARCH_PARAM.concat(query)
-    const apiUrl = SEARCH_URL.concat(searchData, SEARCH_LIMIT_PARAM)
- 
+const fetchData = (apiUrl) => {
     return fetch(apiUrl, {
         method: 'GET',
     })
@@ -23,17 +20,16 @@ export const searchProducts = (query) => {
     })
 }
 
+export const searchProducts = (query) => {
+    const searchData = SEARCH_PARAM.concat(query)
+    const apiUrl = SEARCH_URL.concat(searchData, SEARCH_LIMIT_PARAM)
+ 
+    return fetchData(apiUrl)
+}
+
 export const getProduct = (productId) => {
     const productData = PRODUCT_PARAM.concat(productId)
     const apiUrl = GET_PRODUCT_URL.concat(productData)
 
-    return fetch(apiUrl, {
-        method: 'GET',
-    })
-    .then(res => {
-        return res.json();
-    })
-    .then((info) => {
-        return info.data;
-    })
+    return fetchData(apiUrl)
 }
